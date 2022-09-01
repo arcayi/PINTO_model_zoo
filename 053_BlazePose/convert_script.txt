@@ -12,23 +12,23 @@ tflite2tensorflow \
   --model_path pose_detection.tflite \
   --flatc_path ../flatc \
   --schema_path ../schema.fbs \
-  --model_output_path saved_model_tflite_tfjs_coreml_onnx \
-  --output_pb True
+  --model_output_path saved_model_tflite_tfjs_coreml_onnx.pose_detection \
+  --output_pb 
 
 tflite2tensorflow \
   --model_path pose_detection.tflite \
   --flatc_path ../flatc \
   --schema_path ../schema.fbs \
-  --model_output_path saved_model_tflite_tfjs_coreml_onnx \
-  --output_no_quant_float32_tflite True \
-  --output_weight_quant_tflite True \
-  --output_float16_quant_tflite True \
-  --output_integer_quant_tflite True \
+  --model_output_path saved_model_tflite_tfjs_coreml_onnx.pose_detection \
+  --output_no_quant_float32_tflite  \
+  --output_weight_quant_tflite  \
+  --output_float16_quant_tflite  \
+  --output_integer_quant_tflite  \
   --string_formulas_for_normalization 'data / 255' \
-  --output_tfjs True \
-  --output_tftrt True \
-  --output_coreml True \
-  --output_onnx True \
+  --output_tfjs  \
+  --output_tftrt  \
+  --output_coreml  \
+  --output_onnx  \
   --onnx_opset 13
 
 
@@ -39,8 +39,8 @@ tflite2tensorflow \
   --flatc_path ../flatc \
   --schema_path ../schema.fbs \
   --model_output_path saved_model_edgetpu \
-  --output_pb True \
-  --optimizing_hardswish_for_edgetpu True
+  --output_pb  \
+  --optimizing_hardswish_for_edgetpu 
 
 tflite2tensorflow \
   --model_path pose_detection.tflite \
@@ -48,7 +48,7 @@ tflite2tensorflow \
   --schema_path ../schema.fbs \
   --model_output_path saved_model_edgetpu \
   --string_formulas_for_normalization 'data / 255' \
-  --output_edgetpu True
+  --output_edgetpu 
 
 
 ### Optimization for OpenVINO
@@ -59,8 +59,8 @@ tflite2tensorflow \
   --flatc_path ../flatc \
   --schema_path ../schema.fbs \
   --model_output_path saved_model_openvino \
-  --output_pb True \
-  --optimizing_for_openvino_and_myriad True
+  --output_pb  \
+  --optimizing_for_openvino_and_myriad 
 
 tflite2tensorflow \
   --model_path pose_detection.tflite \
@@ -68,7 +68,7 @@ tflite2tensorflow \
   --schema_path ../schema.fbs \
   --model_output_path saved_model_openvino \
   --string_formulas_for_normalization 'data / 255' \
-  --output_openvino_and_myriad True
+  --output_openvino_and_myriad 
 
 ==============================================================
 ### Normal
@@ -77,22 +77,22 @@ tflite2tensorflow \
   --flatc_path ../flatc \
   --schema_path ../schema.fbs \
   --model_output_path saved_model_tflite_tfjs_coreml_onnx \
-  --output_pb True
+  --output_pb 
 
 tflite2tensorflow \
   --model_path pose_landmark_upper_body.tflite \
   --flatc_path ../flatc \
   --schema_path ../schema.fbs \
   --model_output_path saved_model_tflite_tfjs_coreml_onnx \
-  --output_no_quant_float32_tflite True \
-  --output_weight_quant_tflite True \
-  --output_float16_quant_tflite True \
-  --output_integer_quant_tflite True \
+  --output_no_quant_float32_tflite  \
+  --output_weight_quant_tflite  \
+  --output_float16_quant_tflite  \
+  --output_integer_quant_tflite  \
   --string_formulas_for_normalization 'data / 255' \
-  --output_tfjs True \
-  --output_tftrt True \
-  --output_coreml True \
-  --output_onnx True \
+  --output_tfjs  \
+  --output_tftrt  \
+  --output_coreml  \
+  --output_onnx  \
   --onnx_opset 13
 
 
@@ -103,8 +103,8 @@ tflite2tensorflow \
   --flatc_path ../flatc \
   --schema_path ../schema.fbs \
   --model_output_path saved_model_edgetpu \
-  --output_pb True \
-  --optimizing_hardswish_for_edgetpu True
+  --output_pb  \
+  --optimizing_hardswish_for_edgetpu 
 
 tflite2tensorflow \
   --model_path pose_landmark_upper_body.tflite \
@@ -112,7 +112,7 @@ tflite2tensorflow \
   --schema_path ../schema.fbs \
   --model_output_path saved_model_edgetpu \
   --string_formulas_for_normalization 'data / 255' \
-  --output_edgetpu True
+  --output_edgetpu 
 
 
 ### Optimization for OpenVINO
@@ -123,8 +123,8 @@ tflite2tensorflow \
   --flatc_path ../flatc \
   --schema_path ../schema.fbs \
   --model_output_path saved_model_openvino \
-  --output_pb True \
-  --optimizing_for_openvino_and_myriad True
+  --output_pb  \
+  --optimizing_for_openvino_and_myriad 
 
 tflite2tensorflow \
   --model_path pose_landmark_upper_body.tflite \
@@ -132,7 +132,7 @@ tflite2tensorflow \
   --schema_path ../schema.fbs \
   --model_output_path saved_model_openvino \
   --string_formulas_for_normalization 'data / 255' \
-  --output_openvino_and_myriad True
+  --output_openvino_and_myriad 
 
 
 ==============================================================
@@ -142,22 +142,22 @@ tflite2tensorflow \
   --flatc_path ../flatc \
   --schema_path ../schema.fbs \
   --model_output_path saved_model_tflite_tfjs_coreml_onnx \
-  --output_pb True
+  --output_pb 
 
 tflite2tensorflow \
   --model_path pose_landmark_full_body.tflite \
   --flatc_path ../flatc \
   --schema_path ../schema.fbs \
   --model_output_path saved_model_tflite_tfjs_coreml_onnx \
-  --output_no_quant_float32_tflite True \
-  --output_weight_quant_tflite True \
-  --output_float16_quant_tflite True \
-  --output_integer_quant_tflite True \
+  --output_no_quant_float32_tflite  \
+  --output_weight_quant_tflite  \
+  --output_float16_quant_tflite  \
+  --output_integer_quant_tflite  \
   --string_formulas_for_normalization 'data / 255' \
-  --output_tfjs True \
-  --output_tftrt True \
-  --output_coreml True \
-  --output_onnx True \
+  --output_tfjs  \
+  --output_tftrt  \
+  --output_coreml  \
+  --output_onnx  \
   --onnx_opset 13
 
 
@@ -168,8 +168,8 @@ tflite2tensorflow \
   --flatc_path ../flatc \
   --schema_path ../schema.fbs \
   --model_output_path saved_model_edgetpu \
-  --output_pb True \
-  --optimizing_hardswish_for_edgetpu True
+  --output_pb  \
+  --optimizing_hardswish_for_edgetpu 
 
 tflite2tensorflow \
   --model_path pose_landmark_full_body.tflite \
@@ -177,7 +177,7 @@ tflite2tensorflow \
   --schema_path ../schema.fbs \
   --model_output_path saved_model_edgetpu \
   --string_formulas_for_normalization 'data / 255' \
-  --output_edgetpu True
+  --output_edgetpu 
 
 
 ### Optimization for OpenVINO
@@ -188,8 +188,8 @@ tflite2tensorflow \
   --flatc_path ../flatc \
   --schema_path ../schema.fbs \
   --model_output_path saved_model_openvino \
-  --output_pb True \
-  --optimizing_for_openvino_and_myriad True
+  --output_pb  \
+  --optimizing_for_openvino_and_myriad 
 
 tflite2tensorflow \
   --model_path pose_landmark_full_body.tflite \
@@ -197,7 +197,7 @@ tflite2tensorflow \
   --schema_path ../schema.fbs \
   --model_output_path saved_model_openvino \
   --string_formulas_for_normalization 'data / 255' \
-  --output_openvino_and_myriad True
+  --output_openvino_and_myriad 
 
 
 
@@ -205,12 +205,14 @@ tflite2tensorflow \
 
 tflite2tensorflow \
 --model_path pose_landmark_heavy.tflite \
+--model_output_path saved_model_tflite_tfjs_coreml_onnx.pose_landmark_heavy \
 --flatc_path ../flatc \
 --schema_path ../schema.fbs \
 --output_pb
 
 tflite2tensorflow \
 --model_path pose_landmark_heavy.tflite \
+--model_output_path saved_model_tflite_tfjs_coreml_onnx.pose_landmark_heavy \
 --flatc_path ../flatc \
 --schema_path ../schema.fbs \
 --output_no_quant_float32_tflite \
@@ -267,12 +269,14 @@ ${INTEL_OPENVINO_DIR}/deployment_tools/inference_engine/lib/intel64/myriad_compi
 
 tflite2tensorflow \
 --model_path pose_landmark_full.tflite \
+--model_output_path saved_model_tflite_tfjs_coreml_onnx.pose_landmark_full \
 --flatc_path ../flatc \
 --schema_path ../schema.fbs \
 --output_pb
 
 tflite2tensorflow \
 --model_path pose_landmark_full.tflite \
+--model_output_path saved_model_tflite_tfjs_coreml_onnx.pose_landmark_full \
 --flatc_path ../flatc \
 --schema_path ../schema.fbs \
 --output_no_quant_float32_tflite \
@@ -329,12 +333,14 @@ ${INTEL_OPENVINO_DIR}/deployment_tools/inference_engine/lib/intel64/myriad_compi
 
 tflite2tensorflow \
 --model_path pose_landmark_lite.tflite \
+--model_output_path saved_model_tflite_tfjs_coreml_onnx.pose_landmark_lite \
 --flatc_path ../flatc \
 --schema_path ../schema.fbs \
 --output_pb
 
 tflite2tensorflow \
 --model_path pose_landmark_lite.tflite \
+--model_output_path saved_model_tflite_tfjs_coreml_onnx.pose_landmark_lite \
 --flatc_path ../flatc \
 --schema_path ../schema.fbs \
 --output_no_quant_float32_tflite \
